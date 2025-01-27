@@ -13,7 +13,7 @@ Route::get('/ninjas', function () {
 });
 
 Route::get('/ninjas/{id}', function ($id) {
-    $ninjas = [['name' => 'mario', 'skill' => 75, 'id' => '1'], ['name' => 'luigi', 'skill' => 45, 'id' => '2']];
+    // fetch record with id
 
     return view('ninjas.show', ['id' => $id]);
 });
