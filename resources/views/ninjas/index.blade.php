@@ -1,11 +1,13 @@
 <x-layout>
     <h2>Currently Available Ninjas</h2>
 
-    @if ($greeting == 'hello')
+    {{--
+        @if ($greeting == 'hello')
         <p>Hi from inside the if statement</p>
-    @endif
-
-    <p>{{ $greeting }}</p>
+        @endif
+        
+        <p>{{ $greeting }}</p>
+    --}}
     <ul>
         @foreach ($ninjas as $ninja)
             <li>
